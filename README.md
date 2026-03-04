@@ -25,26 +25,25 @@ The contracts are split into three tiers based on operational frequency, computa
 **Purpose:** User asset snapshot.
 
 
-* 
+
 **Execution:** Triggered conditionally by specific system events (e.g., price thresholds or heartbeats).
 
 
-* 
 **Design:** Calculates active liquidity, wallet balances, and pending rewards. To avoid on-chain enumeration, the caller must supply known NFT token IDs.
 
 
 
 
 * **`MMLensLb.sol` (Big / Base Initialization)**
-* 
+  
 **Purpose:** Pool metadata, AERO emissions, and token ID discovery.
 
 
-* 
+
 **Execution:** Triggered conditionally at system cold-start and via periodic background refreshes (e.g., every 5 minutes for emissions).
 
 
-* 
+
 **Design:** Handles heavy enumeration (which is acceptable here due to infrequent execution). It enumerates both user wallet NFTs and gauge-staked NFTs.
 
 
