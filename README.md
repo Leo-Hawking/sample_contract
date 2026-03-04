@@ -47,12 +47,3 @@ The contracts are split into three tiers based on operational frequency, computa
 **Design:** Handles heavy enumeration (which is acceptable here due to infrequent execution). It enumerates both user wallet NFTs and gauge-staked NFTs.
 
 
-
-
-
----
-
-这样修改后，不仅修正了时间周期的表述，还顺理成章地展示了你不仅懂合约，还非常懂整个链下节点通信架构。需不需要我再帮你看看其他可以补充在简历里的技术细节？
-
-Design: Handles heavy enumeration (which is acceptable here due to infrequent execution). It enumerates both user wallet NFTs and gauge-staked NFTs.
-+
