@@ -9,19 +9,19 @@ These contracts are **not meant to be deployed**. They are designed to be execut
 The contracts are split into three tiers based on operational frequency, computational weight, and execution triggers:
 
 * **`MMLensLs.sol` (Lightweight / Market State)**
-* 
+  
 **Purpose:** Ultra-lightweight market state probe.
 
 
 * **Execution:** Driven continuously by WSS subscriptions (listening to real-time network events/block headers).
-* 
+  
 **Design:** Strictly reads `slot0` and `liquidity`. It contains no loops, no error handling overhead, and performs no bitmap scanning to ensure the absolute minimum RPC execution time.
 
 
 
 
 * **`MMLensLm.sol` (Medium / Position Monitor)**
-* 
+  
 **Purpose:** User asset snapshot.
 
 
