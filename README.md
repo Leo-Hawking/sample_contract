@@ -13,7 +13,7 @@ The contracts are split into three tiers based on operational frequency, computa
 **Purpose:** Ultra-lightweight market state probe.
 
 
-* **Execution:** Driven continuously by WSS subscriptions (listening to real-time network events/block headers).
+* **Execution:** Driven continuously by WSS subscriptions (listening to real-time network events: Mint, Burn, Swap).
   
 **Design:** Strictly reads `slot0` and `liquidity`. It contains no loops, no error handling overhead, and performs no bitmap scanning to ensure the absolute minimum RPC execution time.
 
